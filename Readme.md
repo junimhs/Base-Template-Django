@@ -8,13 +8,20 @@ Para executar o projeto, será necessário instalar apenas o docker com o docker
 
 - [Docker: Necessário para executar o projeto](https://www.docker.com)
 
-## Desenvolvimento
+## Instalação
 
-Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num diretório de sua preferência:
+- Crie o volume do PostgreSQL
 
-```shell
-cd "diretorio de sua preferencia"
-git clone https://github.com/junimhs/Base-Template-Django.git
-cd Base-Template-Django
-docker-compose up -d
+```bash
+docker volume create base-pgdata
 ```
+
+- Execute o projeto com o Docker:
+
+```bash
+docker-compose up
+```
+
+## Rodar o projeto
+
+- Acesse http://localhost:8000 para acessar o Django
